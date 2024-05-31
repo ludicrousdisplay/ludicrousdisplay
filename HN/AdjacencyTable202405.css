@@ -1,0 +1,468 @@
+
+body {
+  /* display: flex;  */
+  /* justify-content: left; */
+  
+  margin: 10;
+}
+main {
+  display: flex;
+  background: #dddddd;
+}
+
+table {
+  flex: 1 840px;  
+  font-family: monospace;
+  font-size: 10pt;  
+  table-layout: fixed;
+  border: 3px solid lime;
+}
+
+thead {
+  height: 100px; 
+}
+th {
+/*   font-weight: normal; */
+  color: #333333;
+  background: lightgray;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  vertical-align: top;
+}
+thead th:nth-child(1) {
+  min-width: 100px;
+}
+thead th:nth-child(1):hover {
+  background: lime;  
+}
+
+.rh {
+  background: lightgray;
+  padding: 2px;
+  text-align: right;
+  font-size:90%;
+}
+td {
+  text-align: center;
+  height: 1.2em;
+  width: 1.3em;
+/*   font-size:70%; */
+}
+td:hover{
+  background: lime;
+}
+
+.rb {
+  display: none;
+}
+
+.content {
+  background: white;
+  display: none;
+}
+/* 
+https://people.phy.cam.ac.uk/dag9/CUBEHELIX/cubetry.html
+0.000 ff ff ff
+0.100 d2 ee ef
+0.200 c1 ca f3
+0.300 cf 9c da
+0.400 d0 7e 93
+0.500 a0 79 49
+0.600 54 79 2f
+0.700 1f 66 42
+0.800 16 3d 4e
+0.900 1a 15 30
+1.000 00 00 00 
+*/
+.cL0 {
+  background: #ededed;
+  color: #ededed;
+}
+.cL1 {
+  background: #d2eeef;
+}
+.cL2 {
+  background: #c1caf3;
+}
+.cL3 {
+  background: #cf9cda;
+}
+.cL4 {
+  background: #d07e93;
+}
+.cL5 {
+  background: #a07949;
+  color: white;
+}
+.cL6 {
+  background: #54792f;
+  color: #d2eeef;
+}
+.cL7 {
+  background: #1f6642;
+  color: #d2eeef;
+}
+.cL8 {
+  background: #163d4e;
+  color: lightgray;
+}
+.cL9 {
+  background: #1a1530;
+  color: lightgray;
+}
+.cL10 {
+  background: #000000;
+  color: lightgray;
+}
+#r-N0N:checked~main .N0N { display: block; }
+#r-A:checked~main .A { display: block; }
+#r-A_B:checked~main .A.B { display: block; }
+#r-A_C:checked~main .A.C { display: block; }
+#r-A_D:checked~main .A.D { display: block; }
+#r-A_E:checked~main .A.E { display: block; }
+#r-A_F:checked~main .A.F { display: block; }
+#r-A_G:checked~main .A.G { display: block; }
+#r-A_H:checked~main .A.H { display: block; }
+#r-A_I:checked~main .A.I { display: block; }
+#r-A_J:checked~main .A.J { display: block; }
+#r-A_K:checked~main .A.K { display: block; }
+#r-A_L:checked~main .A.L { display: block; }
+#r-A_M:checked~main .A.M { display: block; }
+#r-A_N:checked~main .A.N { display: block; }
+#r-A_O:checked~main .A.O { display: block; }
+#r-A_P:checked~main .A.P { display: block; }
+#r-A_Q:checked~main .A.Q { display: block; }
+#r-A_R:checked~main .A.R { display: block; }
+#r-A_S:checked~main .A.S { display: block; }
+#r-A_T:checked~main .A.T { display: block; }
+#r-A_U:checked~main .A.U { display: block; }
+#r-A_V:checked~main .A.V { display: block; }
+#r-A_W:checked~main .A.W { display: block; }
+#r-A_X:checked~main .A.X { display: block; }
+#r-A_Y:checked~main .A.Y { display: block; }
+#r-A_Z:checked~main .A.Z { display: block; }
+#r-B:checked~main .B { display: block; }
+#r-B_C:checked~main .B.C { display: block; }
+#r-B_D:checked~main .B.D { display: block; }
+#r-B_E:checked~main .B.E { display: block; }
+#r-B_F:checked~main .B.F { display: block; }
+#r-B_G:checked~main .B.G { display: block; }
+#r-B_H:checked~main .B.H { display: block; }
+#r-B_I:checked~main .B.I { display: block; }
+#r-B_J:checked~main .B.J { display: block; }
+#r-B_K:checked~main .B.K { display: block; }
+#r-B_L:checked~main .B.L { display: block; }
+#r-B_M:checked~main .B.M { display: block; }
+#r-B_N:checked~main .B.N { display: block; }
+#r-B_O:checked~main .B.O { display: block; }
+#r-B_P:checked~main .B.P { display: block; }
+#r-B_Q:checked~main .B.Q { display: block; }
+#r-B_R:checked~main .B.R { display: block; }
+#r-B_S:checked~main .B.S { display: block; }
+#r-B_T:checked~main .B.T { display: block; }
+#r-B_U:checked~main .B.U { display: block; }
+#r-B_V:checked~main .B.V { display: block; }
+#r-B_W:checked~main .B.W { display: block; }
+#r-B_X:checked~main .B.X { display: block; }
+#r-B_Y:checked~main .B.Y { display: block; }
+#r-B_Z:checked~main .B.Z { display: block; }
+#r-C:checked~main .C { display: block; }
+#r-C_D:checked~main .C.D { display: block; }
+#r-C_E:checked~main .C.E { display: block; }
+#r-C_F:checked~main .C.F { display: block; }
+#r-C_G:checked~main .C.G { display: block; }
+#r-C_H:checked~main .C.H { display: block; }
+#r-C_I:checked~main .C.I { display: block; }
+#r-C_J:checked~main .C.J { display: block; }
+#r-C_K:checked~main .C.K { display: block; }
+#r-C_L:checked~main .C.L { display: block; }
+#r-C_M:checked~main .C.M { display: block; }
+#r-C_N:checked~main .C.N { display: block; }
+#r-C_O:checked~main .C.O { display: block; }
+#r-C_P:checked~main .C.P { display: block; }
+#r-C_Q:checked~main .C.Q { display: block; }
+#r-C_R:checked~main .C.R { display: block; }
+#r-C_S:checked~main .C.S { display: block; }
+#r-C_T:checked~main .C.T { display: block; }
+#r-C_U:checked~main .C.U { display: block; }
+#r-C_V:checked~main .C.V { display: block; }
+#r-C_W:checked~main .C.W { display: block; }
+#r-C_X:checked~main .C.X { display: block; }
+#r-C_Y:checked~main .C.Y { display: block; }
+#r-C_Z:checked~main .C.Z { display: block; }
+#r-D:checked~main .D { display: block; }
+#r-D_E:checked~main .D.E { display: block; }
+#r-D_F:checked~main .D.F { display: block; }
+#r-D_G:checked~main .D.G { display: block; }
+#r-D_H:checked~main .D.H { display: block; }
+#r-D_I:checked~main .D.I { display: block; }
+#r-D_J:checked~main .D.J { display: block; }
+#r-D_K:checked~main .D.K { display: block; }
+#r-D_L:checked~main .D.L { display: block; }
+#r-D_M:checked~main .D.M { display: block; }
+#r-D_N:checked~main .D.N { display: block; }
+#r-D_O:checked~main .D.O { display: block; }
+#r-D_P:checked~main .D.P { display: block; }
+#r-D_Q:checked~main .D.Q { display: block; }
+#r-D_R:checked~main .D.R { display: block; }
+#r-D_S:checked~main .D.S { display: block; }
+#r-D_T:checked~main .D.T { display: block; }
+#r-D_U:checked~main .D.U { display: block; }
+#r-D_V:checked~main .D.V { display: block; }
+#r-D_W:checked~main .D.W { display: block; }
+#r-D_X:checked~main .D.X { display: block; }
+#r-D_Y:checked~main .D.Y { display: block; }
+#r-D_Z:checked~main .D.Z { display: block; }
+#r-E:checked~main .E { display: block; }
+#r-E_F:checked~main .E.F { display: block; }
+#r-E_G:checked~main .E.G { display: block; }
+#r-E_H:checked~main .E.H { display: block; }
+#r-E_I:checked~main .E.I { display: block; }
+#r-E_J:checked~main .E.J { display: block; }
+#r-E_K:checked~main .E.K { display: block; }
+#r-E_L:checked~main .E.L { display: block; }
+#r-E_M:checked~main .E.M { display: block; }
+#r-E_N:checked~main .E.N { display: block; }
+#r-E_O:checked~main .E.O { display: block; }
+#r-E_P:checked~main .E.P { display: block; }
+#r-E_Q:checked~main .E.Q { display: block; }
+#r-E_R:checked~main .E.R { display: block; }
+#r-E_S:checked~main .E.S { display: block; }
+#r-E_T:checked~main .E.T { display: block; }
+#r-E_U:checked~main .E.U { display: block; }
+#r-E_V:checked~main .E.V { display: block; }
+#r-E_W:checked~main .E.W { display: block; }
+#r-E_X:checked~main .E.X { display: block; }
+#r-E_Y:checked~main .E.Y { display: block; }
+#r-E_Z:checked~main .E.Z { display: block; }
+#r-F:checked~main .F { display: block; }
+#r-F_G:checked~main .F.G { display: block; }
+#r-F_H:checked~main .F.H { display: block; }
+#r-F_I:checked~main .F.I { display: block; }
+#r-F_J:checked~main .F.J { display: block; }
+#r-F_K:checked~main .F.K { display: block; }
+#r-F_L:checked~main .F.L { display: block; }
+#r-F_M:checked~main .F.M { display: block; }
+#r-F_N:checked~main .F.N { display: block; }
+#r-F_O:checked~main .F.O { display: block; }
+#r-F_P:checked~main .F.P { display: block; }
+#r-F_Q:checked~main .F.Q { display: block; }
+#r-F_R:checked~main .F.R { display: block; }
+#r-F_S:checked~main .F.S { display: block; }
+#r-F_T:checked~main .F.T { display: block; }
+#r-F_U:checked~main .F.U { display: block; }
+#r-F_V:checked~main .F.V { display: block; }
+#r-F_W:checked~main .F.W { display: block; }
+#r-F_X:checked~main .F.X { display: block; }
+#r-F_Y:checked~main .F.Y { display: block; }
+#r-F_Z:checked~main .F.Z { display: block; }
+#r-G:checked~main .G { display: block; }
+#r-G_H:checked~main .G.H { display: block; }
+#r-G_I:checked~main .G.I { display: block; }
+#r-G_J:checked~main .G.J { display: block; }
+#r-G_K:checked~main .G.K { display: block; }
+#r-G_L:checked~main .G.L { display: block; }
+#r-G_M:checked~main .G.M { display: block; }
+#r-G_N:checked~main .G.N { display: block; }
+#r-G_O:checked~main .G.O { display: block; }
+#r-G_P:checked~main .G.P { display: block; }
+#r-G_Q:checked~main .G.Q { display: block; }
+#r-G_R:checked~main .G.R { display: block; }
+#r-G_S:checked~main .G.S { display: block; }
+#r-G_T:checked~main .G.T { display: block; }
+#r-G_U:checked~main .G.U { display: block; }
+#r-G_V:checked~main .G.V { display: block; }
+#r-G_W:checked~main .G.W { display: block; }
+#r-G_X:checked~main .G.X { display: block; }
+#r-G_Y:checked~main .G.Y { display: block; }
+#r-G_Z:checked~main .G.Z { display: block; }
+#r-H:checked~main .H { display: block; }
+#r-H_I:checked~main .H.I { display: block; }
+#r-H_J:checked~main .H.J { display: block; }
+#r-H_K:checked~main .H.K { display: block; }
+#r-H_L:checked~main .H.L { display: block; }
+#r-H_M:checked~main .H.M { display: block; }
+#r-H_N:checked~main .H.N { display: block; }
+#r-H_O:checked~main .H.O { display: block; }
+#r-H_P:checked~main .H.P { display: block; }
+#r-H_Q:checked~main .H.Q { display: block; }
+#r-H_R:checked~main .H.R { display: block; }
+#r-H_S:checked~main .H.S { display: block; }
+#r-H_T:checked~main .H.T { display: block; }
+#r-H_U:checked~main .H.U { display: block; }
+#r-H_V:checked~main .H.V { display: block; }
+#r-H_W:checked~main .H.W { display: block; }
+#r-H_X:checked~main .H.X { display: block; }
+#r-H_Y:checked~main .H.Y { display: block; }
+#r-H_Z:checked~main .H.Z { display: block; }
+#r-I:checked~main .I { display: block; }
+#r-I_J:checked~main .I.J { display: block; }
+#r-I_K:checked~main .I.K { display: block; }
+#r-I_L:checked~main .I.L { display: block; }
+#r-I_M:checked~main .I.M { display: block; }
+#r-I_N:checked~main .I.N { display: block; }
+#r-I_O:checked~main .I.O { display: block; }
+#r-I_P:checked~main .I.P { display: block; }
+#r-I_Q:checked~main .I.Q { display: block; }
+#r-I_R:checked~main .I.R { display: block; }
+#r-I_S:checked~main .I.S { display: block; }
+#r-I_T:checked~main .I.T { display: block; }
+#r-I_U:checked~main .I.U { display: block; }
+#r-I_V:checked~main .I.V { display: block; }
+#r-I_W:checked~main .I.W { display: block; }
+#r-I_X:checked~main .I.X { display: block; }
+#r-I_Y:checked~main .I.Y { display: block; }
+#r-I_Z:checked~main .I.Z { display: block; }
+#r-J:checked~main .J { display: block; }
+#r-J_K:checked~main .J.K { display: block; }
+#r-J_L:checked~main .J.L { display: block; }
+#r-J_M:checked~main .J.M { display: block; }
+#r-J_N:checked~main .J.N { display: block; }
+#r-J_O:checked~main .J.O { display: block; }
+#r-J_P:checked~main .J.P { display: block; }
+#r-J_Q:checked~main .J.Q { display: block; }
+#r-J_R:checked~main .J.R { display: block; }
+#r-J_S:checked~main .J.S { display: block; }
+#r-J_T:checked~main .J.T { display: block; }
+#r-J_U:checked~main .J.U { display: block; }
+#r-J_V:checked~main .J.V { display: block; }
+#r-J_W:checked~main .J.W { display: block; }
+#r-J_X:checked~main .J.X { display: block; }
+#r-J_Y:checked~main .J.Y { display: block; }
+#r-J_Z:checked~main .J.Z { display: block; }
+#r-K:checked~main .K { display: block; }
+#r-K_L:checked~main .K.L { display: block; }
+#r-K_M:checked~main .K.M { display: block; }
+#r-K_N:checked~main .K.N { display: block; }
+#r-K_O:checked~main .K.O { display: block; }
+#r-K_P:checked~main .K.P { display: block; }
+#r-K_Q:checked~main .K.Q { display: block; }
+#r-K_R:checked~main .K.R { display: block; }
+#r-K_S:checked~main .K.S { display: block; }
+#r-K_T:checked~main .K.T { display: block; }
+#r-K_U:checked~main .K.U { display: block; }
+#r-K_V:checked~main .K.V { display: block; }
+#r-K_W:checked~main .K.W { display: block; }
+#r-K_X:checked~main .K.X { display: block; }
+#r-K_Y:checked~main .K.Y { display: block; }
+#r-K_Z:checked~main .K.Z { display: block; }
+#r-L:checked~main .L { display: block; }
+#r-L_M:checked~main .L.M { display: block; }
+#r-L_N:checked~main .L.N { display: block; }
+#r-L_O:checked~main .L.O { display: block; }
+#r-L_P:checked~main .L.P { display: block; }
+#r-L_Q:checked~main .L.Q { display: block; }
+#r-L_R:checked~main .L.R { display: block; }
+#r-L_S:checked~main .L.S { display: block; }
+#r-L_T:checked~main .L.T { display: block; }
+#r-L_U:checked~main .L.U { display: block; }
+#r-L_V:checked~main .L.V { display: block; }
+#r-L_W:checked~main .L.W { display: block; }
+#r-L_X:checked~main .L.X { display: block; }
+#r-L_Y:checked~main .L.Y { display: block; }
+#r-L_Z:checked~main .L.Z { display: block; }
+#r-M:checked~main .M { display: block; }
+#r-M_N:checked~main .M.N { display: block; }
+#r-M_O:checked~main .M.O { display: block; }
+#r-M_P:checked~main .M.P { display: block; }
+#r-M_Q:checked~main .M.Q { display: block; }
+#r-M_R:checked~main .M.R { display: block; }
+#r-M_S:checked~main .M.S { display: block; }
+#r-M_T:checked~main .M.T { display: block; }
+#r-M_U:checked~main .M.U { display: block; }
+#r-M_V:checked~main .M.V { display: block; }
+#r-M_W:checked~main .M.W { display: block; }
+#r-M_X:checked~main .M.X { display: block; }
+#r-M_Y:checked~main .M.Y { display: block; }
+#r-M_Z:checked~main .M.Z { display: block; }
+#r-N:checked~main .N { display: block; }
+#r-N_O:checked~main .N.O { display: block; }
+#r-N_P:checked~main .N.P { display: block; }
+#r-N_Q:checked~main .N.Q { display: block; }
+#r-N_R:checked~main .N.R { display: block; }
+#r-N_S:checked~main .N.S { display: block; }
+#r-N_T:checked~main .N.T { display: block; }
+#r-N_U:checked~main .N.U { display: block; }
+#r-N_V:checked~main .N.V { display: block; }
+#r-N_W:checked~main .N.W { display: block; }
+#r-N_X:checked~main .N.X { display: block; }
+#r-N_Y:checked~main .N.Y { display: block; }
+#r-N_Z:checked~main .N.Z { display: block; }
+#r-O:checked~main .O { display: block; }
+#r-O_P:checked~main .O.P { display: block; }
+#r-O_Q:checked~main .O.Q { display: block; }
+#r-O_R:checked~main .O.R { display: block; }
+#r-O_S:checked~main .O.S { display: block; }
+#r-O_T:checked~main .O.T { display: block; }
+#r-O_U:checked~main .O.U { display: block; }
+#r-O_V:checked~main .O.V { display: block; }
+#r-O_W:checked~main .O.W { display: block; }
+#r-O_X:checked~main .O.X { display: block; }
+#r-O_Y:checked~main .O.Y { display: block; }
+#r-O_Z:checked~main .O.Z { display: block; }
+#r-P:checked~main .P { display: block; }
+#r-P_Q:checked~main .P.Q { display: block; }
+#r-P_R:checked~main .P.R { display: block; }
+#r-P_S:checked~main .P.S { display: block; }
+#r-P_T:checked~main .P.T { display: block; }
+#r-P_U:checked~main .P.U { display: block; }
+#r-P_V:checked~main .P.V { display: block; }
+#r-P_W:checked~main .P.W { display: block; }
+#r-P_X:checked~main .P.X { display: block; }
+#r-P_Y:checked~main .P.Y { display: block; }
+#r-P_Z:checked~main .P.Z { display: block; }
+#r-Q:checked~main .Q { display: block; }
+#r-Q_R:checked~main .Q.R { display: block; }
+#r-Q_S:checked~main .Q.S { display: block; }
+#r-Q_T:checked~main .Q.T { display: block; }
+#r-Q_U:checked~main .Q.U { display: block; }
+#r-Q_V:checked~main .Q.V { display: block; }
+#r-Q_W:checked~main .Q.W { display: block; }
+#r-Q_X:checked~main .Q.X { display: block; }
+#r-Q_Y:checked~main .Q.Y { display: block; }
+#r-Q_Z:checked~main .Q.Z { display: block; }
+#r-R:checked~main .R { display: block; }
+#r-R_S:checked~main .R.S { display: block; }
+#r-R_T:checked~main .R.T { display: block; }
+#r-R_U:checked~main .R.U { display: block; }
+#r-R_V:checked~main .R.V { display: block; }
+#r-R_W:checked~main .R.W { display: block; }
+#r-R_X:checked~main .R.X { display: block; }
+#r-R_Y:checked~main .R.Y { display: block; }
+#r-R_Z:checked~main .R.Z { display: block; }
+#r-S:checked~main .S { display: block; }
+#r-S_T:checked~main .S.T { display: block; }
+#r-S_U:checked~main .S.U { display: block; }
+#r-S_V:checked~main .S.V { display: block; }
+#r-S_W:checked~main .S.W { display: block; }
+#r-S_X:checked~main .S.X { display: block; }
+#r-S_Y:checked~main .S.Y { display: block; }
+#r-S_Z:checked~main .S.Z { display: block; }
+#r-T:checked~main .T { display: block; }
+#r-T_U:checked~main .T.U { display: block; }
+#r-T_V:checked~main .T.V { display: block; }
+#r-T_W:checked~main .T.W { display: block; }
+#r-T_X:checked~main .T.X { display: block; }
+#r-T_Y:checked~main .T.Y { display: block; }
+#r-T_Z:checked~main .T.Z { display: block; }
+#r-U:checked~main .U { display: block; }
+#r-U_V:checked~main .U.V { display: block; }
+#r-U_W:checked~main .U.W { display: block; }
+#r-U_X:checked~main .U.X { display: block; }
+#r-U_Y:checked~main .U.Y { display: block; }
+#r-U_Z:checked~main .U.Z { display: block; }
+#r-V:checked~main .V { display: block; }
+#r-V_W:checked~main .V.W { display: block; }
+#r-V_X:checked~main .V.X { display: block; }
+#r-V_Y:checked~main .V.Y { display: block; }
+#r-V_Z:checked~main .V.Z { display: block; }
+#r-W:checked~main .W { display: block; }
+#r-W_X:checked~main .W.X { display: block; }
+#r-W_Y:checked~main .W.Y { display: block; }
+#r-W_Z:checked~main .W.Z { display: block; }
+#r-X:checked~main .X { display: block; }
+#r-X_Y:checked~main .X.Y { display: block; }
+#r-X_Z:checked~main .X.Z { display: block; }
+#r-Y:checked~main .Y { display: block; }
+#r-Y_Z:checked~main .Y.Z { display: block; }
+#r-Z:checked~main .Z { display: block; }
