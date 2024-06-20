@@ -1,5 +1,13 @@
 ## Hi there 👋
 
+## 🔭 I recently made this...
+### interactive viz using only HTML and CSS
+#### skill matrix from HN Who is hiring? posts
+
+[June 2024](https://ludicrousdisplay.github.io/HN/whoishiring202406.html)
+
+[May 2024](https://ludicrousdisplay.github.io/HN/whoishiring202405.html)
+
 <!--
 **ludicrousdisplay/ludicrousdisplay** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
